@@ -9,6 +9,13 @@ body {
   max-width: 80ch;
   padding: 1rem;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 * {
@@ -33,7 +40,6 @@ h1 {
   background-color: #ff9776;
 }
 
-
 /* nav styles */
 
 .nav-links {
@@ -55,7 +61,8 @@ h1 {
   text-transform: uppercase;
 }
 
-.nav-links a:hover, a:focus {
+.nav-links a:hover,
+a:focus {
   background-color: #ff9776;
 }
 
@@ -80,7 +87,6 @@ h1 {
   .hamburger {
     display: none;
   }
-
 }
 
 .tags {
@@ -92,10 +98,10 @@ h1 {
 .tag {
   margin: 0.25em;
   border: dotted 1px #a1a1a1;
-  border-radius: .5em;
-  padding: .5em 1em;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
   font-size: 1.15em;
-  background-color: #F8FCFD;
+  background-color: #f8fcfd;
 }
 
 html.dark {
@@ -103,11 +109,10 @@ html.dark {
   color: #fff;
 }
 
-.dark .nav-links a{
+.dark .nav-links a {
   color: rgba(0, 153, 255, 0.919);
 }
 
-
-.dark .skill{
+.dark .skill {
   color: rgba(0, 153, 255, 0.919);
 }
